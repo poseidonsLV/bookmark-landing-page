@@ -28,6 +28,10 @@ header nav a:hover {
   color: #5368df;
 }
 
+header .hamburger-menu {
+  display: none;
+}
+
 #button {
   padding: 10px 30px;
   border: none;
