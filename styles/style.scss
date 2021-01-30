@@ -1,0 +1,23 @@
+@import "./Header";
+@import "./Button";
+@import "./SectionFirst";
+@import "./SectionFeatures";
+@import "./SectionMoreInfo";
+@import "./Extensions";
+@import "./Questions";
+@import "./Banner";
+@import "./Footer";
+@import "./MediaQueries";
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+}
+.centered {
+  max-width: 80%;
+  margin: auto;
+}

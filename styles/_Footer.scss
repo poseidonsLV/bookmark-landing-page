@@ -1,0 +1,33 @@
+footer {
+  border-top: 2px solid hsl(229, 31%, 21%);
+  background: hsl(231, 66%, 55%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  .left {
+    display: flex;
+    align-items: center;
+    nav {
+      margin-left: 40px;
+    }
+    nav a {
+      text-decoration: none;
+      transition: all 0.25s;
+      text-transform: uppercase;
+      padding: 8px;
+      color: hsl(229, 31%, 21%);
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  .right {
+    display: flex;
+    img {
+      margin-left: 15px;
+      cursor: pointer;
+    }
+  }
+}

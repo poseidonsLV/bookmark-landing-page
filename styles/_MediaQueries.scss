@@ -1,0 +1,260 @@
+@media (max-width: 1024px) {
+  .centered {
+    max-width: 90% !important;
+  }
+  .get-bookmark {
+    .left {
+      h1 {
+        min-width: 0px;
+        width: 100%;
+        font-size: 2.5rem;
+      }
+      p {
+        min-width: 0px;
+        font-size: 1rem;
+      }
+    }
+    .right {
+      &::after {
+        height: 25%;
+      }
+    }
+  }
+}
+
+@media (max-width: 952px) {
+  #section-with-illustration.more-info {
+    flex-direction: column-reverse !important;
+    align-items: center;
+    text-align: center;
+    .right {
+      justify-content: center;
+      margin-bottom: 150px;
+      img {
+        width: 80% !important;
+        transition: all 0.25s;
+        transform: none;
+      }
+      &::after {
+        width: 60%;
+        height: 30%;
+        transform: translateY(100px) rotate(180deg);
+      }
+    }
+    .left {
+      h1 {
+        font-size: 1.8rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
+  #section-with-illustration.get-bookmark {
+    flex-direction: column-reverse !important;
+    align-items: center;
+    text-align: center;
+    .right {
+      margin-bottom: 150px;
+      img {
+        width: 80% !important;
+        transition: all 0.25s;
+      }
+      &::after {
+        width: 60%;
+        height: 30%;
+        transform: translateY(100px);
+      }
+    }
+    .left {
+      .moreInfo-title {
+        font-size: 2rem !important;
+      }
+    }
+  }
+  #section-with-illustration .left {
+    h1 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+  }
+  .extensions {
+    .cards {
+      flex-direction: column;
+    }
+  }
+
+  .questions {
+    header {
+      text-align: center;
+      .title {
+        font-size: 1.4rem !important;
+      }
+      .desc {
+        font-size: 0.85rem !important;
+      }
+    }
+
+    .questions-col {
+      #questions-row {
+        .question {
+          .title {
+            font-size: 0.6rem !important;
+          }
+        }
+      }
+      #questions-row.active {
+        .answer {
+          font-size: 0.75rem !important;
+        }
+      }
+    }
+  }
+
+  header {
+    position: relative;
+    z-index: 1;
+    height: 50px;
+    nav {
+      background: rgb(221, 221, 221);
+      border-radius: 10px;
+      padding: 20px;
+      position: absolute;
+      top: 80px;
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+      text-align: center;
+      align-items: center;
+      a {
+        padding: 10px;
+        width: 100%;
+        transition: all 0.35s;
+        &:hover {
+          border-radius: 8px;
+          background: rgb(206, 206, 206);
+        }
+      }
+      .nav-button {
+        width: 100%;
+        margin-top: 15px;
+        margin-left: 0px;
+      }
+    }
+
+    .hamburger-menu {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      height: 2.1rem;
+      width: 2.5rem;
+      cursor: pointer;
+    }
+
+    .hamburger-menu .bar {
+      height: 5px;
+      background: rgb(48, 48, 48);
+      border-radius: 5px;
+      margin: 3px 0px;
+      transform-origin: left;
+      transition: all 0.5s;
+    }
+    .hamburger-menu.active .top {
+      transform: rotate(45deg);
+    }
+    .hamburger-menu.active .middle {
+      transform: translateX(-70px);
+      opacity: 0;
+    }
+    .hamburger-menu.active .bottom {
+      transform: rotate(-45deg) translateY(4px) translateX(-3px);
+    }
+  }
+  .nav {
+    display: none;
+  }
+  .nav.active {
+    display: flex;
+  }
+}
+
+@media (max-width: 768px) {
+  #section-with-illustration {
+    .right {
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .features-nav {
+    grid-template-columns: 1fr !important;
+    #col {
+      border-bottom: 1px solid rgb(233, 233, 233);
+      &::after {
+        transform: translateX(-800px) !important;
+      }
+    }
+    #col.active {
+      &::after {
+        transform: translateX(0px) !important;
+      }
+    }
+  }
+
+  .banner {
+    .banner-title-1 {
+      h4 {
+        font-size: 0.8rem !important;
+      }
+    }
+    .banner-title-2 {
+      margin: 20px;
+      max-width: 450px;
+      h3 {
+        font-size: 1.1rem;
+      }
+    }
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      button {
+        margin-top: 5px;
+      }
+      .input-msg {
+        top: -20px;
+        height: fit-content;
+        left: 5px;
+        font-size: 0.8rem;
+        text-transform: capitalize;
+      }
+    }
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    .right {
+      img {
+        margin-right: 10px;
+      }
+    }
+    .left {
+      margin-bottom: 25px;
+      align-items: center;
+      flex-direction: column;
+      nav {
+        margin-left: 0px !important;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  }
+
+  #section-with-illustration .left h1 {
+    min-width: 10px !important;
+  }
+}

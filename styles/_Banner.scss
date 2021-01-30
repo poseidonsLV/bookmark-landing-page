@@ -1,0 +1,53 @@
+.banner {
+  padding: 50px;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 1fr;
+  background: hsl(231, 69%, 60%);
+  color: white;
+  text-transform: uppercase;
+  .banner-title-1 {
+    h4 {
+      font-weight: 400;
+      letter-spacing: 4px;
+    }
+  }
+  .banner-title-2 {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 40px;
+    h3 {
+      font-size: 1.7rem;
+      font-weight: 500;
+    }
+  }
+  .contact-form {
+    position: relative;
+    .err-img {
+      position: absolute;
+      left: 160px;
+      top: 8px;
+      display: none;
+    }
+    .err-img.active {
+      display: flex;
+    }
+    .input-msg {
+      position: absolute;
+      bottom: -20px;
+      left: 5px;
+      font-size: 0.8rem;
+      text-transform: capitalize;
+    }
+    .contact-form-input {
+      padding: 10px;
+      border-radius: 5px;
+      outline: none;
+      border: none;
+      &::placeholder {
+        color: dimgray;
+      }
+    }
+  }
+}
